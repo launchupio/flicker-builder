@@ -21,3 +21,5 @@ $ yarn start
 5. Observe the flicker. The orange box is a custom component registered in builder. We starts from
 loading up dist/index.html where it is available, and then it goes away and comes back. If hydration
 matched well, we shouldn't have the element itself disappear.
+
+![](./buildergif.gif)
