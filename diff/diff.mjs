@@ -1,7 +1,6 @@
 import { DiffDOM } from "diff-dom";
 import prettier from "prettier";
 import { readFileSync, writeFileSync } from "fs";
-import { JSDOM } from "jsdom";
 
 const dd = new DiffDOM();
 
