@@ -22,5 +22,6 @@ $ yarn start
 loading up dist/index.html where it is available, and then it goes away and comes back. If hydration
 matched well, we shouldn't have the element itself disappear.
 6. Observe the difference between the final output that is in dist/index.html (you can find it in ./distIndex.html) and the client-side final rendering (./clientSideIndex.html)
+7. In your terminal, run `node diff.mjs`. Then look at the file `the_diff.txt` to see the dom diff as created by the diff-dom library. No diff would be an output of just [].
 
 ![](./buildergif.gif)
