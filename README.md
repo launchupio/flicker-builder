@@ -17,11 +17,11 @@ $ yarn start
 1. Do the above, and then open up http://localhost:3000 (or whatever port you're on)
 2. in chrome, right click inspect, and look for the Performance tab (usually tucked away under the >> button)
 3. Change network from no throttle to Fast 3G or Slow 3G
-4. Press refresh button inside inspect mode (command+shift+e for mac)
+4. Press refresh button inside inspect mode (`command+shift+e` for mac)
 5. Observe the flicker. The orange box is a custom component registered in builder. We starts from
-loading up dist/index.html where it is available, and then it goes away and comes back. If hydration
+loading up `./dist/index.html` where it is available, and then it goes away and comes back. If hydration
 matched well, we shouldn't have the element itself disappear.
-6. Observe the difference between the final output that is in dist/index.html (you can find it in ./distIndex.html) and the client-side final rendering (./clientSideIndex.html)
-7. In your terminal, run `node diff.mjs`. Then look at the file `the_diff.txt` to see the dom diff as created by the diff-dom library. No diff would be an output of just [].
+6. Observe the difference between the final output that is in `dist/index.html` (you can find it in `./diff/distIndex.html`) and the client-side final rendering (`./diff/clientSideIndex.html`)
+7. In your terminal, path into the `/diff` folder. Run `node diff.mjs`. Then look at the file `the_diff.txt` to see the dom diff as created by the diff-dom library. No diff would be an output of just `[]`.
 
 ![](./buildergif.gif)
